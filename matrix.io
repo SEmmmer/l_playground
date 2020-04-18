@@ -1,13 +1,23 @@
+dim := method(x, y,
+    if(x <= 0, return 0)
+    colume := list() 
+    n := 1
+    while(n < x,
+     line(y)
+    n = n + 1
+    ) 
+)
+
 line := method(i,
     if(i <= 0, return 0)
     row := list()
     n := 1
-
     while(n < i,
-    row append(0)
+    row append(n)
     n = n + 1
     )
+    writeln(row)
     return row
 )
 
-writeln(line(10))
+dim(10, 10)
