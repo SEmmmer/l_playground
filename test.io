@@ -1,5 +1,2 @@
-unless := method(
-    (call sender doMessage(call message argAt(0)))ifFalse
-    (call sender doMessage(call message argAt(1)))ifTrue
-    (call sender doMessage(call message argAt(2)))
-    )
+test := list(1,2,3)
+writeln(test)
